@@ -1,4 +1,4 @@
-# OpenTSDb
+# OpenTSDB
 
 OpenTSDB  is a scalable timeseries database which stores and serves massive amounts of timeseries data without losing granularity
 
@@ -34,7 +34,7 @@ env COMPRESSION=NONE HBASE_HOME=path/to/hbase-0.94.X ./src/create_table.sh
 
 At this point you can access the TSD's web interface through http://127.0.0.1:4242 (if it's running on your local machine).
  
-Download the [datapop.txt](https://)
+Download the [datapop.txt](https://github.com/jayanthbaswa/OpentsDb/blob/master/datapop.txt)
 We can ingest the many ways 
 - With Cli
 ```bash
@@ -43,7 +43,7 @@ put population.generated 1590534000 3 country=usa city=newyork
 #./build/tsdb import [file location]
 ./build/tsdb import /home/jay/Documents/datapop.txt
 ```
-- By executing the Java Client Program [here]().
+- By executing the Java  Program [here](https://github.com/jayanthbaswa/OpentsDb/tree/master/Opentsdb/src/main/java/writing).
 
 
 
@@ -51,24 +51,25 @@ To visualize the data OpenTSDB comes with built-in GUI.A much nicer GUI can be f
 After successfully installing and  setting up the Grafana with the OpenTSDB data source.We can create and read with different scenarios as follows:
 
 - Timeseries data with same metric but with different tags.
-![](https://github.com/jayanthbaswa/timescale/blob/master/examples/noneofmetrics.png)
+![](https://github.com/jayanthbaswa/OpentsDb/blob/master/examples/noneofmetrics.png)
+
 - Timeseries datawith aggregating(sum) over each time series point(T0,T0+5m,T0+10m,..)
-![](https://github.com/jayanthbaswa/timescale/blob/master/examples/sumofmetric.png)
+![](https://github.com/jayanthbaswa/OpentsDb/blob/master/examples/sumofmetric.png)
 
 - Timeseries data with aggregating over country with data sampling of 10 minutes
-
-![](https://github.com/jayanthbaswa/timescale/blob/master/examples/sum_dwn_india_10m.png)
+![](https://github.com/jayanthbaswa/OpentsDb/blob/master/examples/sum_dwn_india_10m.png)
 
 - Timeseries data with aggregating over country with data sampling of 1 day
-![](https://github.com/jayanthbaswa/timescale/blob/master/examples/sum_dwn_1day_usa.png)
+![](https://github.com/jayanthbaswa/OpentsDb/blob/master/examples/sum_dwn_1day_usa.png)
+
 - Timeseries data with aggregating over city=mumbai with data sampling of 1 day
-![](https://github.com/jayanthbaswa/timescale/blob/master/examples/sum_dwn_mumbai_1day.png)
+![](https://github.com/jayanthbaswa/OpentsDb/blob/master/examples/sum_dwn_mumbai_1day.png)
 
 
 
 OpenTSDB also comes with HTTP api to perform various queries,where some of them are below:
 - Timeseries data with sum over each time series with HTTP API(T0,T0+5,...)
-![](https://github.com/jayanthbaswa/timescale/blob/master/examples/http.png)
+![](https://github.com/jayanthbaswa/OpentsDb/blob/master/examples/http.png)
 
 
 For further reference,please check the OpenTSDB community [here](http://opentsdb.net/).
