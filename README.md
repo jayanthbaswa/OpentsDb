@@ -43,8 +43,10 @@ We can ingest the many ways
 - By executing the Java Client Program [here]().
 
 
+
 To visualize the data OpenTSDB comes with built-in GUI.A much nicer GUI can be found in the form of the open source [Grafana](https://grafana.com/)(I was having issues with built-in GUI so majorly using grafana, which functions almost similarly).
 After successfully installing and  setting up the Grafana with the OpenTSDB data source.We can create and read with different scenarios as follows:
+
 - 
 -
 -
